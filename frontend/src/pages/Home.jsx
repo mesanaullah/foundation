@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import WoWeAre from '../components/WoWeAre'
+import WhoWeAre from '../components/WhoWeAre'
 
 const Home = () => {
     return (
         <div>
             <Hero />
-            <WoWeAre />
+            <WhoWeAre />
         </div>
     )
 }

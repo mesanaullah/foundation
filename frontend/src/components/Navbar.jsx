@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import clsx from "clsx";
-
+import logo from '../IMG/umeed2.png'
 
 
 const Navbar = () => {
@@ -27,8 +27,8 @@ const Navbar = () => {
 
             {/* ------------------Logo------------------------ */}
             <Link to='/'>
-                {/* <img src='' className='w-28' alt="" /> */}
-                <p className='text-2xl tracking-wider font-medium'>Foundation</p>
+                <img src={logo} className='w-32' alt="" />
+                {/* <p className='text-2xl tracking-wider font-medium'>Foundation</p> */}
             </Link>
 
             {/* ------Destop Menu------ */}
