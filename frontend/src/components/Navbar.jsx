@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import clsx from "clsx";
 
@@ -12,12 +12,12 @@ const Navbar = () => {
     const navItems = [
         { name: "HOME", href: "/" },
         { name: "ABOUT US", href: "/about" },
+        { name: "OUR WORK", href: "/ourwork" },
         { name: "GOV. LEGAL", href: "/goverment" },
-        // { name: "WHAT WE DO", href: "/Whatwedo" },
-        { name: "IMPACT", href: "/impact" },
+        // { name: "IMPACT", href: "/impact" },
         { name: "MEDIA", href: "/media" },
         { name: "CAREER", href: "/career" },
-        { name: "APPLY", href: "/apply" },
+        { name: "CONTACT US", href: "/contact" },
         { name: "DONATE", href: "/donate" },
     ];
 
@@ -34,9 +34,10 @@ const Navbar = () => {
             {/* ------Destop Menu------ */}
             <ul className="hidden sm:flex gap-3 md:gap-5 text-xs md:text-sm">
                 {navItems.filter((item) => item.name !== "DONATE").map((item, i) => (
-                    <Link key={i} to={item.href}>
-                        <p>{item.name}</p>
-                    </Link>
+                    <NavLink key={i} to={item.href}>
+                        <p className='active:text-yellow-400'>{item.name}</p>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-yellow-500 hidden' />
+                    </NavLink>
                 ))}
 
                 {/* {navItems.map((item, i) => (

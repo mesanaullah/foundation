@@ -12,8 +12,8 @@ const slides = [
     },
     {
         id: 2,
-        title: "Adventure Awaits",
-        subtitle: "Find your next journey with us.",
+        title: "Empowering India Through Skills",
+        subtitle: "Since 2013, helping thousands turn skills into sustainable ",
         image: img2,
     },
     {
@@ -44,7 +44,7 @@ const Hero = () => {
 
 
     return (
-        <div className="relative w-full h-[70vh] sm:h-[80vh] md:h-screen overflow-hidden">
+        <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
             {/* Slides Wrapper */}
             <div
                 className="flex h-full transition-transform duration-700 ease-out"

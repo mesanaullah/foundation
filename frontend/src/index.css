@@ -6,3 +6,7 @@
   /* font-family: 'outfit'; */
   font-family: 'Inter';
 }
+
+a.active hr{
+  display: block;
+}
