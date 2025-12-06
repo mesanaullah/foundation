@@ -5,13 +5,13 @@ import about from '../IMG/aboutUs.jpg'
 const AboutUs = () => {
     return (
         <div>
-            <div className='text-2xl sm:text-3xl text-center pt-8 border-t border-yellow-400'>
+            <div className='text-2xl sm:text-3xl text-center pt-4 sm:pt-8 border-t border-yellow-400'>
                 <Title text1={'ABOUT '} text2={'US'} />
             </div>
 
-            <div className='my-4 flex flex-col sm:flex-row gap-16'>
+            <div className='my-2 sm:my-4 flex flex-col sm:flex-row gap-16'>
                 <img className='w-full sm:max-w-[450px] aspect-4/3 object-cover' src={about} alt="" />
-                <div className='flex flex-col justify-center gap-6 md:w-2/4'>
+                <div className='flex flex-col justify-center gap-6 md:w-2/4 mb-4'>
                     <b>UMEED INDIA FOUNDATION</b>
                     <p>Umeed India Foundation was established in 2013 with a simple but powerful vision:</p>
 
