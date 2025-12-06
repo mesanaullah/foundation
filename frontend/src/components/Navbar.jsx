@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: "HOME", href: "/" },
         { name: "ABOUT US", href: "/about" },
         { name: "OUR WORK", href: "/ourwork" },
-        { name: "GOV. LEGAL", href: "/goverment" },
+        { name: "GOV. LEGAL", href: "/government" },
         // { name: "IMPACT", href: "/impact" },
         { name: "MEDIA", href: "/media" },
         { name: "CAREER", href: "/career" },
