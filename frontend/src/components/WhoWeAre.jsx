@@ -10,7 +10,9 @@ const WhoWeAre = () => {
             {/* -----------Who we are?------------ */}
             <div className='text-center py-8 text-2xl sm:text-3xl'>
                 <Title text1={'Who '} text2={'We Are ?'} />
-                <p className='w-3/4 m-auto text-sm sm:text-base md:text-lg text-[#2F2F2F]'>Umeed India Foundation is a nationwide NGO dedicated to creating employment, supporting skilled individuals, and transforming lives through practical, dignity-based assistance. Since 2013, we have empowered thousands of talented individuals by providing them with tools, raw materials, skill training, and guaranteed buy-back of their finished products — ensuring that no skilled person remains unemployed in India.</p>
+                <p className='w-3/4 m-auto text-base md:text-lg'>Umeed India Foundation is a nationwide NGO dedicated to creating employment, supporting skilled individuals, and transforming lives through practical, dignity-based assistance.</p>
+                
+                <p className='mt-2 w-3/4 m-auto text-base md:text-lg'>Since 2013, we have empowered thousands of talented individuals by providing them with tools, raw materials, skill training, and guaranteed buy-back of their finished products — ensuring that no skilled person remains unemployed in India.</p>
             </div>
 
             {/* -----------What makes us unique?------------ */}
