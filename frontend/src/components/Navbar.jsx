@@ -77,7 +77,7 @@ const Navbar = () => {
                     {navItems.map((item, key) => (
                         <Link
                             key={key}
-                            href={item.href}
+                            to={item.href}
                             className="text-sm hover:text-yellow-500"
                             onClick={() => setIsMenuOpen(false)}
                         >
