@@ -75,14 +75,14 @@ const Navbar = () => {
             >
                 <div className="flex flex-col space-y-8 text-xl">
                     {navItems.map((item, key) => (
-                        <a
+                        <Link
                             key={key}
                             href={item.href}
                             className="text-sm hover:text-yellow-500"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {item.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
