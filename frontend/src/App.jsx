@@ -16,6 +16,7 @@ import OurModel from './pages/OurModel'
 import Products from './pages/Products'
 import Stories from './pages/Stories'
 import Volunteer from './pages/Volunteer'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -29,12 +30,10 @@ const App = () => {
         <Route path='/stories' element={<Stories />} />
         <Route path='/government' element={<Government />} />
         <Route path='/volunteer' element={<Volunteer />} />
-        <Route path='/impact' element={<Impact />} />
-        <Route path='/media' element={<Media />} />
-        <Route path='/career' element={<Career />} />
-        <Route path='/donate' element={<Donate />} />
         <Route path='/apply' element={<Apply />} />
         <Route path='/products' element={<Products />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/donate' element={<Donate />} />
       </Routes>
       <Footer />
     </div>
