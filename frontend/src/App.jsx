@@ -11,6 +11,7 @@ import Career from './pages/Career'
 import Donate from './pages/Donate'
 import Apply from './pages/Apply'
 import Footer from './components/Footer'
+import OurWork from './pages/OurWork'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/ourwork' element={<OurWork />} />
         <Route path='/government' element={<Government />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/impact' element={<Impact />} />

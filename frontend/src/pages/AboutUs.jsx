@@ -5,7 +5,7 @@ import about from '../IMG/aboutUs.jpg'
 const AboutUs = () => {
     return (
         <div>
-            <div className='text-2xl sm:text-3xl text-center pt-4 sm:pt-8 border-t border-yellow-400'>
+            <div className='text-2xl sm:text-3xl text-center pt-4 sm:pt-6 border-t border-yellow-400'>
                 <Title text1={'ABOUT '} text2={'US'} />
             </div>
 

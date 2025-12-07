@@ -24,6 +24,7 @@ const Footer = () => {
                     <ul className='flex flex-col gap-1 text-gray-600'>
                         <Link to='/'>Home</Link>
                         <Link to='/about'>About Us</Link>
+                        <Link to='/ourwork'>Our Work</Link>
                         <Link to='/contact'>Contact</Link>
                         <Link to=''>Privacy policy</Link>
                     </ul>
@@ -35,7 +36,7 @@ const Footer = () => {
                     <ul className='flex flex-col gap-1 text-gray-600'>
                         <p>Umeed India Foundation</p>
                         <p>info@umeedindiafoundation.in</p>
-                        <p>+91-XXXXXXXXXX</p>
+                        <p>+91-9234299707</p>
                         <Link to='https://www.instagram.com/imsanaullahh/' className='flex items-center gap-1'><PiInstagramLogoLight className='w-4 h-4' />Instagram</Link>
                     </ul>
                 </div>
