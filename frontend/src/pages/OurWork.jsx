@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../components/Title'
 import food from '../IMG/food.jpg'
-import eduaction from '../IMG/education.jpg'
+import Education from '../IMG/Education.jpg'
 import healthcare from '../IMG/healthcare.jpg'
 
 
@@ -50,7 +50,7 @@ const OurWork = () => {
         {
             title: "Education",
             desc: "Supporting children's education",
-            image: eduaction,
+            image: Education,
         },
         {
             title: "Healthcare",
