@@ -12,6 +12,9 @@ import Donate from './pages/Donate'
 import Apply from './pages/Apply'
 import Footer from './components/Footer'
 import OurWork from './pages/OurWork'
+import OurModel from './pages/OurModel'
+import Products from './pages/Products'
+import Stories from './pages/Stories'
 
 const App = () => {
   return (
@@ -21,6 +24,8 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/ourwork' element={<OurWork />} />
+        <Route path='/our-model' element={<OurModel />} />
+        <Route path='/stories' element={<Stories />} />
         <Route path='/government' element={<Government />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/impact' element={<Impact />} />
@@ -28,6 +33,7 @@ const App = () => {
         <Route path='/career' element={<Career />} />
         <Route path='/donate' element={<Donate />} />
         <Route path='/apply' element={<Apply />} />
+        <Route path='/products' element={<Products />} />
       </Routes>
       <Footer />
     </div>

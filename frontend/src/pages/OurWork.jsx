@@ -61,74 +61,72 @@ const OurWork = () => {
 
     return (
         <div>
-            <section className=''>
-                <div className="text-2xl sm:text-3xl text-center pt-4 sm:pt-6 border-t border-yellow-400">
-                    <Title text1={'OUR '} text2={'WORK'} />
-                    <p className='text-lg text-gray-600 pt-0'>We Work Across All Skill Categories</p>
+            <div className="text-2xl sm:text-3xl text-center pt-4 sm:pt-6 border-t border-yellow-400">
+                <Title text1={'OUR '} text2={'WORK'} />
+                <p className='text-lg text-gray-600 pt-0'>We Work Across All Skill Categories</p>
+            </div>
+
+            <div className="py-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                {/* Skilled Work Section */}
+                <div className="bg-white p-8 rounded-md shadow-sm">
+                    <h3 className="text-xl font-bold text-black mb-6">
+                        Skilled Work Support
+                    </h3>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {skilledWork.map((item, index) => (
+                            <li
+                                key={index}
+                                className="text-gray-600 bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition"
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
-                <div className="py-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-
-                    {/* Skilled Work Section */}
-                    <div className="bg-white p-8 rounded-md shadow-sm">
-                        <h3 className="text-xl font-bold text-black mb-6">
-                            Skilled Work Support
-                        </h3>
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            {skilledWork.map((item, index) => (
-                                <li
-                                    key={index}
-                                    className="text-gray-600 bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition"
-                                >
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Other NGO Sectors */}
-                    <div className="bg-white p-8 rounded-md shadow-sm">
-                        <h3 className="text-xl font-bold text-black mb-6">
-                            Other NGO Sectors
-                        </h3>
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            {otherSectors.map((item, index) => (
-                                <li
-                                    key={index}
-                                    className="text-gray-600 bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition"
-                                >
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
+                {/* Other NGO Sectors */}
+                <div className="bg-white p-8 rounded-md shadow-sm">
+                    <h3 className="text-xl font-bold text-black mb-6">
+                        Other NGO Sectors
+                    </h3>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {otherSectors.map((item, index) => (
+                            <li
+                                key={index}
+                                className="text-gray-600 bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition"
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-                <div className='mt-2 text-2xl sm:text-3xl text-center'>
-                    <Title text1={'Our Key '} text2={'Initiatives'} />
-                </div>
-                <div className="sm:py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                    {workItems.map((item, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-md shadow-sm hover:shadow-xl transition overflow-hidden"
-                        >
-                            <img
-                                src={item.image}
-                                alt={item.title}
-                                className="w-full h-56 object-cover"
-                            />
 
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold text-black">
-                                    {item.title}
-                                </h3>
-                                <p className="text-gray-600 mt-2">{item.desc}</p>
-                            </div>
+            </div>
+            <div className='mt-2 text-2xl sm:text-3xl text-center'>
+                <Title text1={'Our Key '} text2={'Initiatives'} />
+            </div>
+            <div className="sm:py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                {workItems.map((item, index) => (
+                    <div
+                        key={index}
+                        className="bg-white rounded-md shadow-sm hover:shadow-xl transition overflow-hidden"
+                    >
+                        <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-56 object-cover"
+                        />
+
+                        <div className="p-6">
+                            <h3 className="text-xl font-semibold text-black">
+                                {item.title}
+                            </h3>
+                            <p className="text-gray-600 mt-2">{item.desc}</p>
                         </div>
-                    ))}
-                </div>
-            </section>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
