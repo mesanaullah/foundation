@@ -4,6 +4,7 @@ import food from '../IMG/food.jpg'
 import eduaction from '../IMG/education.jpg'
 import healthcare from '../IMG/healthcare.jpg'
 
+
 const OurWork = () => {
 
     const skilledWork = [
