@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import AboutUs from './pages/AboutUs'
 import Government from './pages/Government'
-import WhatWeDo from './pages/WhatWeDo'
+import WhatWeDo from './pages/Volunteer'
 import Impact from './pages/Impact'
 import Media from './pages/Media'
 import Career from './pages/Career'
@@ -15,6 +15,7 @@ import OurWork from './pages/OurWork'
 import OurModel from './pages/OurModel'
 import Products from './pages/Products'
 import Stories from './pages/Stories'
+import Volunteer from './pages/Volunteer'
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         <Route path='/our-model' element={<OurModel />} />
         <Route path='/stories' element={<Stories />} />
         <Route path='/government' element={<Government />} />
-        <Route path='/what-we-do' element={<WhatWeDo />} />
+        <Route path='/volunteer' element={<Volunteer />} />
         <Route path='/impact' element={<Impact />} />
         <Route path='/media' element={<Media />} />
         <Route path='/career' element={<Career />} />

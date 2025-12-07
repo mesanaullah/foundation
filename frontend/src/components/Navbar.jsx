@@ -18,8 +18,8 @@ const Navbar = () => {
         // { name: "GOV. LEGAL", href: "/government" },
         { name: "APPLY", href: "/apply" },
         // { name: "PRODUCTS", href: "/products" },
-        { name: "MEDIA", href: "/media" },
-        { name: "CAREER", href: "/career" },
+        { name: "VOLUNTEER", href: "/volunteer" },
+        // { name: "CAREER", href: "/career" },
         { name: "CONTACT US", href: "/contact" },
         { name: "DONATE", href: "/donate" },
     ];
