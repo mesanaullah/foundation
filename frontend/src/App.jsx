@@ -17,6 +17,7 @@ import Products from './pages/Products'
 import Stories from './pages/Stories'
 import Volunteer from './pages/Volunteer'
 import Contact from './pages/Contact'
+import Whatsapp from './components/Whatsapp'
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/donate' element={<Donate />} />
       </Routes>
+      <Whatsapp />
       <Footer />
     </div>
   )

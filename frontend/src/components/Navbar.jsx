@@ -16,12 +16,12 @@ const Navbar = () => {
         { name: "OUR WORK", href: "/ourwork" },
         { name: "STORIES", href: "/stories" },
         // { name: "GOV. LEGAL", href: "/government" },
-        { name: "APPLY", href: "/apply" },
         // { name: "PRODUCTS", href: "/products" },
         { name: "VOLUNTEER", href: "/volunteer" },
         // { name: "CAREER", href: "/career" },
         { name: "CONTACT US", href: "/contact" },
-        { name: "DONATE", href: "/donate" },
+        { name: "APPLY", href: "/apply" },
+        // { name: "DONATE", href: "/donate" },
     ];
 
     return (
@@ -36,7 +36,7 @@ const Navbar = () => {
 
             {/* ------Destop Menu------ */}
             <ul className="hidden sm:flex gap-3 md:gap-5 text-xs md:text-sm">
-                {navItems.filter((item) => item.name !== "DONATE").map((item, i) => (
+                {navItems.filter((item) => item.name !== "APPLY").map((item, i) => (
                     <NavLink key={i} to={item.href}>
                         <p className='active:text-yellow-400'>{item.name}</p>
                         <hr className='w-2/4 border-none h-[1.5px] bg-yellow-500 hidden' />
@@ -44,16 +44,17 @@ const Navbar = () => {
                 ))}
 
                 {/* {navItems.map((item, i) => (
-                    <Link key={i} to={item.href}>
-                        <p>{item.name}</p>
-                    </Link>
+                    <NavLink key={i} to={item.href}>
+                        <p className='active:text-yellow-400'>{item.name}</p>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-yellow-500 hidden' />
+                    </NavLink>
                 ))} */}
             </ul>
 
-            {/* Donate Button and Apply buttton */}
+            {/* Apply Button */}
             <div className='hidden sm:flex gap-4'>
-                <Link to='/donate' className='relative'>
-                    <p className='text-xs md:text-sm bg-yellow-400 active:bg-amber-500 py-2 px-3 md:px-4 rounded-sm'>DONATE</p>
+                <Link to='/apply' className='relative'>
+                    <p className='text-xs md:text-sm bg-yellow-400 active:bg-amber-500 py-2 px-3 md:px-4 rounded-sm'>APPLY</p>
                 </Link>
             </div>
 
