@@ -24,25 +24,80 @@ const Apply = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+
+    //     alert("Form submitted successfully!");
+
+    //     setFormData({
+    //         firstName: "",
+    //         lastName: "",
+    //         dob: "",
+    //         gender: "",
+    //         mobile: "",
+    //         email: "",
+    //         qualification: "",
+    //         address: "",
+    //         state: "",
+    //         photo: null,
+    //     });
+
+    //     document.getElementById("photoInput").value = "";
+    // };
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        try {
+            const fd = new FormData();
+            fd.append("firstName", formData.firstName);
+            fd.append("lastName", formData.lastName);
+            fd.append("dob", formData.dob);
+            fd.append("gender", formData.gender);
+            fd.append("mobile", formData.mobile);
+            fd.append("email", formData.email);
+            fd.append("qualification", formData.qualification);
+            fd.append("address", formData.address);
+            fd.append("state", formData.state);
+            // fd.append("skill", formData.skill || "");
+            // fd.append("tools", formData.tools || "");
+            // fd.append("training", formData.training || "");
+            if (formData.photo) fd.append("photo", formData.photo);
+            // idProof if you have
+            // if (formData.idProof) fd.append("idProof", formData.idProof);
 
-        alert("Form submitted successfully!");
+            const res = await fetch(`${import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"}/api/apply`, {
+                method: "POST",
+                body: fd
+            });
 
-        setFormData({
-            firstName: "",
-            lastName: "",
-            dob: "",
-            gender: "",
-            mobile: "",
-            email: "",
-            qualification: "",
-            address: "",
-            state: "",
-            photo: null,
-        });
-
-        document.getElementById("photoInput").value = "";
+            const data = await res.json();
+            if (res.ok) {
+                alert("Application submitted successfully!");
+                // reset form
+                setFormData({
+                    firstName: "",
+                    lastName: "",
+                    dob: "",
+                    gender: "",
+                    mobile: "",
+                    email: "",
+                    qualification: "",
+                    address: "",
+                    state: "",
+                    // skill: "",
+                    // tools: "",
+                    // training: "",
+                    photo: null
+                });
+                document.getElementById("photoInput").value = "";
+            } else {
+                alert(data.message || "Submission failed");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Network error");
+        }
     };
 
     return (
@@ -52,7 +107,7 @@ const Apply = () => {
             </div>
 
             <p className="text-center text-gray-700 text-lg font-medium">
-                Fill this form to receive tools, training, raw materials, and guaranteed earning support.
+                Fill out this form to apply for office-based employment opportunities at UMEED Foundation.
             </p>
 
             <div className='flex justify-center'>

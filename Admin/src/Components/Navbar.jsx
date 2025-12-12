@@ -9,7 +9,7 @@ const Navbar = () => {
                 <img src={logo} className='w-36' alt="" />
                 {/* <p className='text-xs text-gray-600 font-medium'>ADMIN PANEL</p> */}
             </div>
-            <button onClick={() => setToken('')} className='bg-black active:bg-gray-800 text-white px-5 py-2 sm:px-7 sm:py-2  rounded-full text-xs sm:text-sm'>Logout</button>
+            {/* <button onClick={() => setToken('')} className='bg-black active:bg-gray-800 text-white px-5 py-2 sm:px-7 sm:py-2  rounded-full text-xs sm:text-sm'>Logout</button> */}
         </div>
     )
 }

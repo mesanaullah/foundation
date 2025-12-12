@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { PiInstagramLogoLight } from "react-icons/pi";
+import { LuInstagram } from "react-icons/lu";
+import { MdFacebook} from "react-icons/md";
 import logo from '../IMG/umeed2.png'
 
 
@@ -37,7 +38,8 @@ const Footer = () => {
                         <p>Umeed India Foundation</p>
                         <p>info@umeedindiafoundation.in</p>
                         <p>+91-9234299707</p>
-                        <Link to='https://www.instagram.com/imsanaullahh/' className='flex items-center gap-1'><PiInstagramLogoLight className='w-4 h-4' />Instagram</Link>
+                        <Link to='https://www.instagram.com/office_umeedindia/' className='flex items-center gap-1'><LuInstagram className='w-4 h-4' />Instagram</Link>
+                        <Link to='https://www.facebook.com/people/Umeed-India/61584688093153/?mibextid=wwXIfr&rdid=HHODialgDWzFiOn5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1WaoqwiB5b%2F%3Fmibextid%3DwwXIfr' className='flex items-center gap-1'><MdFacebook className='w-5 h-5' />Facebook</Link>
                     </ul>
                 </div>
             </div>
