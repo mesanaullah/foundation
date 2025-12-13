@@ -23,7 +23,8 @@ app.use(cors({
     origin: [
         "http://localhost:5174",
         "http://localhost:5173",
-        "https://ummeed-admin.vercel.app"
+        "https://ummeed-admin.vercel.app",
+        "https://ummeed-frontend.vercel.app"
     ],
     credentials: true
 }));
